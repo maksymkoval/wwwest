@@ -630,17 +630,21 @@ section .collective {
     position: relative; }
     section .collective .collective_context .grid {
       max-width: 1131px;
-      padding-left: 10%; }
+      padding-left: 7%; }
       section .collective .collective_context .grid .grid-item {
         float: left;
-        width: 18%;
+        width: 16%;
         margin: auto; }
         section .collective .collective_context .grid .grid-item img {
           display: block;
-          width: 100%;
+          max-width: 100%;
           margin: auto; }
       section .collective .collective_context .grid .grid-item--width2 {
-        width: 38%; }
+        width: 32%; }
+      section .collective .collective_context .grid .grid-item--width2:first-of-type {
+        padding-bottom: 15px; }
+      section .collective .collective_context .grid .grid-second {
+        padding-top: 15px !important; }
     section .collective .collective_context h1 {
       text-align: center;
       font-family: 'Playfair Display SC';

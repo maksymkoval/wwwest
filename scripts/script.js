@@ -6,7 +6,8 @@
   $('.grid').isotope({
     itemSelector: '.grid-item',
     masonry: {
-      columnWidth: 70
+      columnWidth: 100,
+      horizontalOrder: true
     }
   });
   });
