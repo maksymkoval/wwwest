@@ -1,0 +1,66 @@
+section {
+        .front-page{
+            background-image: url(../images/back-main.png) ;
+            max-width: 1440px;
+            margin: 0 auto;
+            height: 100%;
+            .front-page_context{
+                max-width: 1131px;
+                height: 100%;
+                position: relative; 
+                margin-left: auto;
+                padding-bottom: 100px;
+                margin-right: auto;
+                    .expertise-logo{
+                        position: absolute;
+                        top: 95px;
+                        left: 0;
+                    }
+                    .social-media{
+                        .facebook{
+                            position: absolute;
+                            top: 95px;
+                            right: 0;
+                        }
+                        .instagram{
+                            position: absolute;
+                            top: 140px;
+                            right: 0;
+                        }
+                    }
+                    .front-page_img{
+                        text-align: center;
+                        padding-top: 125px;
+                    }
+                    h3{
+                        font-style: normal;
+                        font-weight: 900;   
+                        color: $color-text2;
+                        text-align: center;
+                        font-size: 18px;
+                        line-height: 24px;
+                        letter-spacing: 0.01em;
+                        font-family: 'Playfair Display SC';
+                        padding-bottom: 58px;
+                    }
+                    .front-page_input{
+                       background-color:transparent ;
+                       color: white;
+                       padding: 0;
+                       width: 180px;
+                       height: 48px;
+                       border: 2px solid $border-color;
+                       margin: auto;
+                       display: block;
+                       font-family: 'Raleway';
+                       font-style: normal;
+                       font-weight: 600;
+                       font-size: 16px;
+                       line-height: 19px;
+                       letter-spacing: 0.01em;
+                       text-transform: uppercase;
+                    }
+                 
+            }
+        }
+}

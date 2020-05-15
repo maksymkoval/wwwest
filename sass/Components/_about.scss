@@ -1,0 +1,43 @@
+section{
+    .aboutus{
+        background-image: url(../images/back-about.png);;
+        max-width: 1440px;
+        margin: 0 auto;
+        height: 408px;
+        .aboutus_context{
+            max-width: 1131px;
+            position: relative;
+            height: 100%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1fr 1.1fr;
+            align-items: center;
+            grid-column-gap: 40px;
+            .aboutus_context_info{
+            max-width: 450px;
+            h1{
+                font-family:'Playfair Display SC';
+                font-style: normal;
+                font-weight: 900;
+                font-size: 61px;
+                line-height: 81px;
+                color: $color-grey;
+                padding-bottom: 20px;
+            }
+            p{
+                font-family: 'Raleway';
+                font-style: normal;
+                font-weight: normal;
+                font-size: 15px;
+                line-height: 18px;
+                letter-spacing: 0.01em;
+                color: $color-black-1;
+            }
+            }
+            .aboutus_context_img{
+                position: absolute;
+                right: 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,1 @@
+{"version":3,"file":"box-sizing.css","sources":["Generic/box-sizing.scss"],"sourcesContent":["*, *:before, *:after {\r\n    box-sizing: inherit;\r\n}"],"names":[],"mappings":"AAAA,AAAA,CAAC,EAAE,CAAC,AAAA,OAAO,EAAE,CAAC,AAAA,MAAM,CAAC;EACjB,UAAU,EAAE,OAAO,GACtB"}

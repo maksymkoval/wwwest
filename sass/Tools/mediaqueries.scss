@@ -1,0 +1,122 @@
+@media print {
+
+    body {
+      margin: 0;
+      color: #000;
+      background-color: #fff;
+    }
+  
+}
+@media (max-width: 1150px){
+  header{
+    border-bottom: none!important;
+    left: unset!important;    right: unset!important;
+  }
+  .artists{
+    .artists_context{
+      .artists_context_four-artists{
+     
+          grid-template-columns: 1fr 1fr!important ;
+          .artist_context_four-artists_individual-artist{
+            margin:auto;
+          }
+        
+      }
+    }
+  }
+  .featured{
+    .featured_context_features{
+      grid-template-columns:1fr!important ;
+      grid-gap: 20px;
+    }
+  }
+  .aboutus{
+    .aboutus_context{
+      .aboutus_context_info {
+      display: block;
+      margin: auto;
+      }
+      grid-template-columns: 1fr!important;
+      .aboutus_context_img{
+        display: none;
+      }
+    }
+  }  
+  .form .form_context_location{
+    grid-template-columns: 1fr!important;
+    .form_context_input_google-maps img{
+      display: block;
+      margin: auto;
+
+    }
+  }
+  footer .small br{
+  display: block!important;
+  }
+  footer .small .social-media{
+    display: none;
+ 
+  }
+  footer .footer {
+    display: none!important;
+  }
+  .navbar{
+    .navbar-collapse{
+      .navbar-nav{
+        grid-template-columns:1fr;
+        margin: auto;
+      }
+    }
+  }
+  }
+  @media(max-width:580px){
+    .collective .collective_context h1{
+      font-size: 40px!important;
+    }
+    .our-accomplishments{
+      .our-accomplishments_context{
+        grid-template-columns: 1fr!important;
+        grid-gap: 40px;
+      }
+    }
+    .artists .artists_context .artists_context_four-artists {
+      grid-template-columns: 1fr!important;
+    }
+    .featured .featured_context .featured_context_top-content{
+      grid-template-columns: 1fr!important;
+      span{
+        clear: both!important;
+      }
+    }
+    section .featured .featured_context_features{
+      grid-template-columns: 1fr;
+    }
+    section .featured .featured_context_features .featured_context_features_small-tattoos .featured_context_features_small-tattoos_imgs {
+      display: block!important;
+      margin: auto;
+    br{
+      display: block;
+    }
+  }
+  .featured .featured_context_features .featured_context_features_small-tattoos {
+    display: contents;
+  }
+  section .featured .featured_context_features .featured_context_features_big-tattoos{
+    display: block!important;
+    margin: auto;
+
+  }
+  section .front-page .front-page_context .front-page_img {
+    padding-top: 200px!important  ;
+    img{
+    width: 200px;
+  }
+}
+.form_context_input_google-maps img{
+  display: none!important;
+
+}
+  }
+  
+
+  

@@ -1,0 +1,70 @@
+
+    footer{
+        background-color:$color-black-1 ;
+        max-width: 1440px;
+        margin: 0 auto;
+        height: 116px;
+       .footer{
+        max-width: 1131px;
+        height: 58px;
+        margin-left: auto;
+        margin-right: auto;
+        border-bottom: 1px solid $color-grey;
+        border-top: 1px solid $color-grey;
+        .nav{
+            justify-content: space-between;
+         padding-top: 15px;
+          li a{
+             color: $color-text;
+             font-family: 'Raleway';
+             font-style: normal;
+             font-weight: normal;
+             font-size: 15px;
+             line-height: 18px;
+             letter-spacing: 0.01em;
+             color: $color-text;
+             padding: 5px  0 10px 0;
+             
+             &:hover{
+                 color: $color-hover;
+                 
+             }
+            }
+        }
+    }
+        .small{
+            padding-top: 15px;
+            height: 58px;
+            max-width: 1131px;
+            margin-left: auto;
+            margin-right: auto;
+            br{
+                display: none;
+            }
+            small{
+                font-family: Raleway;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 13px;
+                line-height: 15px;
+                letter-spacing: 0.01em;
+                color: $color-grey;
+                &:first-of-type{
+                    padding-right: 100px;
+                }
+            }
+            .social-media{
+                float:right;
+                .facebook{
+                    width: 15px;
+                    height: 15px;
+                }
+                .instagram{
+                    padding-left: 30px;
+                    width: 15px;
+                    height: 15px;
+                }
+            }
+        }
+       
+    }

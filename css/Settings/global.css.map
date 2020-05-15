@@ -1,0 +1,1 @@
+{"version":3,"file":"global.css","sources":["Settings/global.scss"],"sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;900&family=Raleway&display=swap');\r\n\r\n// font-family: 'Playfair Display SC', serif;\r\n// font-family: 'Raleway', sans-serif;"],"names":[],"mappings":"AAAA,OAAO,CAAC,4GAAI"}

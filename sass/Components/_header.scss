@@ -1,0 +1,51 @@
+body{
+    overflow-x: hidden;
+}
+header{
+    position: fixed;
+    display: inline-block;
+    max-width: 1131px;
+    // height: 28px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 36px;
+    border-bottom: 1px solid $color-grey;
+    z-index: 100;
+        .navbar{
+            padding:0!important;
+        }
+        .navbar-collapse{
+            .navbar-nav{
+
+                width: 100%;
+                display: grid;
+                grid-template-columns: repeat(10,1fr);
+                .nav-link{
+                    text-align: start;
+                    color: $color-text;
+                    font-family: 'Raleway';
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 15px;
+                    line-height: 18px;
+                    letter-spacing: 0.01em;
+                    color: $color-text;
+                    // padding: 0px  0 30px 0;
+                   
+                    &:hover{
+                        color: $color-hover;
+                        
+                    }
+                   }
+            }
+    }
+    }
+.navbar-toggler-icon{
+    background-image: url(../images/burger-menu.png)!important;
+    width: 6rem;
+}
+.navbar-toggler{
+    background-color: white;
+}

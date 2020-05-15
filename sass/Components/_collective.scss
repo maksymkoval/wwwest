@@ -1,0 +1,74 @@
+section{
+    .collective{
+        background-color:$color-black-1 ;
+        max-width: 1440px;
+        margin: 0 auto;
+        height: 100%;
+        .collective_context{
+            max-width: 1131px;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            .grid{
+                max-width: 1131px;
+              padding-left: 10%;
+                .grid-item{
+                    float: left;
+                    width: 18%;
+                    margin: auto;
+                    img{
+                            display: block;
+                            width: 100%;
+                            margin: auto;
+                    }
+                }
+                .grid-item--width2 { width: 38%; }
+                // .grid-item--height2{ height: 100%; }
+            }
+            
+            h1{
+                text-align: center;
+                font-family: 'Playfair Display SC';
+                font-style: normal;
+                font-weight: 900;
+                font-size: 61px;
+                line-height: 81px;
+                color: $color-grey;
+                padding-top: 75px;
+            }
+            span{
+                font-family: 'Raleway';
+                    padding-top: 30px;
+                    text-align: end;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 15px;
+                    line-height: 18px;
+                    letter-spacing: 0.01em;
+                    color: $color-text;
+                    cursor: pointer;
+                    text-align: center;
+                    display: block;
+            }
+        }
+    }
+}
+
+
+   // .collective_context_gallery{
+            //     display: grid;
+            //     grid-gap:5px ;
+            //     grid-template-columns: repeat(auto-fill, minmax(222px,1fr));
+            //     div{
+            //         margin: auto;
+            //         // width: 25%;
+            //     }
+            //     .big-tattoo-first{
+            //         grid-column: auto/span 2 ;
+            //         grid-row: auto/span 2;
+            //     }
+            //     .big-tattoo-last{
+            //         grid-column: auto/span 2 ;
+            //         grid-row: auto/span 2;
+            //     }
+            // }

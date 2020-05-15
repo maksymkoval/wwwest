@@ -1,0 +1,58 @@
+section{
+    .artists{
+        background-color:$color-black-1 ;
+        max-width: 1440px;
+        margin: 0 auto;
+        height:100%;
+        .artists_context{
+            max-width: 1131px;
+            height: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            padding-bottom: 120px;
+            h1{
+                padding-top: 80px;
+                padding-bottom: 24px;
+                color: $color-grey;
+                font-style: normal;
+                font-weight: 900;   
+                font-size: 61px;
+                line-height: 81px;
+                font-family: 'Playfair Display SC';
+            }
+            .artists_context_four-artists{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                grid-gap: 25px;
+                .artist_context_four-artists_individual-artist{
+                    .artist_context_four-artists_individual-artist_info{
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                        span:first-of-type{
+                            font-family: 'Playfair Display SC';
+                            color: $color-text;
+                            font-style: normal;
+                            font-weight: 900;
+                            font-size: 24px;
+                            line-height: 32px;
+                            letter-spacing: 0.01em;
+                            text-transform: uppercase;
+                        }
+                        span:nth-of-type(2){
+                            font-family: 'Raleway';
+                            padding-top: 10px;
+                            text-align: end;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 15px;
+                            line-height: 18px;
+                            letter-spacing: 0.01em;
+                            color: $color-text;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

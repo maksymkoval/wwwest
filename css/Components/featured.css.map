@@ -1,0 +1,1 @@
+{"version":3,"file":"featured.css","sources":["Components/featured.scss"],"sourcesContent":[".collective{\r\n    display: flexbox;\r\n}"],"names":[],"mappings":"AAAA,AAAA,WAAW,CAAA;EACP,OAAO,EAAE,OAAO,GACnB"}

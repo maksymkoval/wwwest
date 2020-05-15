@@ -1,0 +1,1075 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;900&family=Raleway&display=swap");
+@media print {
+  body {
+    margin: 0;
+    color: #000;
+    background-color: #fff; } }
+
+@media (max-width: 1150px) {
+  header {
+    border-bottom: none !important;
+    left: unset !important;
+    right: unset !important; }
+  .artists .artists_context .artists_context_four-artists {
+    grid-template-columns: 1fr 1fr !important; }
+    .artists .artists_context .artists_context_four-artists .artist_context_four-artists_individual-artist {
+      margin: auto; }
+  .featured .featured_context_features {
+    grid-template-columns: 1fr !important;
+    grid-gap: 20px; }
+  .aboutus .aboutus_context {
+    grid-template-columns: 1fr !important; }
+    .aboutus .aboutus_context .aboutus_context_info {
+      display: block;
+      margin: auto; }
+    .aboutus .aboutus_context .aboutus_context_img {
+      display: none; }
+  .form .form_context_location {
+    grid-template-columns: 1fr !important; }
+    .form .form_context_location .form_context_input_google-maps img {
+      display: block;
+      margin: auto; }
+  footer .small br {
+    display: block !important; }
+  footer .small .social-media {
+    display: none; }
+  footer .footer {
+    display: none !important; }
+  .navbar .navbar-collapse .navbar-nav {
+    grid-template-columns: 1fr;
+    margin: auto; } }
+
+@media (max-width: 580px) {
+  .collective .collective_context h1 {
+    font-size: 40px !important; }
+  .our-accomplishments .our-accomplishments_context {
+    grid-template-columns: 1fr !important;
+    grid-gap: 40px; }
+  .artists .artists_context .artists_context_four-artists {
+    grid-template-columns: 1fr !important; }
+  .featured .featured_context .featured_context_top-content {
+    grid-template-columns: 1fr !important; }
+    .featured .featured_context .featured_context_top-content span {
+      clear: both !important; }
+  section .featured .featured_context_features {
+    grid-template-columns: 1fr; }
+  section .featured .featured_context_features .featured_context_features_small-tattoos .featured_context_features_small-tattoos_imgs {
+    display: block !important;
+    margin: auto; }
+    section .featured .featured_context_features .featured_context_features_small-tattoos .featured_context_features_small-tattoos_imgs br {
+      display: block; }
+  .featured .featured_context_features .featured_context_features_small-tattoos {
+    display: contents; }
+  section .featured .featured_context_features .featured_context_features_big-tattoos {
+    display: block !important;
+    margin: auto; }
+  section .front-page .front-page_context .front-page_img {
+    padding-top: 200px !important; }
+    section .front-page .front-page_context .front-page_img img {
+      width: 200px; }
+  .form_context_input_google-maps img {
+    display: none !important; } }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0-modified | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* make sure to set some focus styles for accessibility */
+:focus {
+  outline: 0; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration,
+input[type=search]::-webkit-search-results-button,
+input[type=search]::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+  -moz-appearance: none; }
+
+input[type=search] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box; }
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  resize: vertical; }
+
+/**
+ * Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  max-width: 100%; }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address styling not present in IE 7/8/9, Firefox 3, and Safari 4.
+ * Known issue: no IE 6 support.
+ */
+[hidden] {
+  display: none; }
+
+/**
+ * 1. Correct text resizing oddly in IE 6/7 when body `font-size` is set using
+ *    `em` units.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  font-size: 100%;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+a:focus {
+  outline: thin dotted; }
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+  outline: 0; }
+
+/**
+ * 1. Remove border when inside `a` element in IE 6/7/8/9 and Firefox 3.
+ * 2. Improve image quality when scaled in IE 7.
+ */
+img {
+  border: 0;
+  /* 1 */
+  -ms-interpolation-mode: bicubic;
+  /* 2 */ }
+
+/**
+ * Address margin not present in IE 6/7/8/9, Safari 5, and Opera 11.
+ */
+figure {
+  margin: 0; }
+
+/**
+ * Correct margin displayed oddly in IE 6/7.
+ */
+form {
+  margin: 0; }
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct color not being inherited in IE 6/7/8/9.
+ * 2. Correct text not wrapping in Firefox 3.
+ * 3. Correct alignment displayed oddly in IE 6/7.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  white-space: normal;
+  /* 2 */
+  *margin-left: -7px;
+  /* 3 */ }
+
+/**
+ * 1. Correct font size not being inherited in all browsers.
+ * 2. Address margins set differently in IE 6/7, Firefox 3+, Safari 5,
+ *    and Chrome.
+ * 3. Improve appearance and consistency in all browsers.
+ */
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+  vertical-align: baseline;
+  /* 3 */
+  *vertical-align: middle;
+  /* 3 */ }
+
+/**
+ * Address Firefox 3+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+button,
+input {
+  line-height: normal; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 6+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+button,
+select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ * 4. Remove inner spacing in IE 7 without affecting normal text inputs.
+ *    Known issue: inner spacing remains in IE 6.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+  *overflow: visible;
+  /* 4 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+/**
+ * 1. Address box sizing set to content-box in IE 8/9.
+ * 2. Remove excess padding in IE 8/9.
+ * 3. Remove excess padding in IE 7.
+ *    Known issue: excess padding remains in IE 6.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+  *height: 13px;
+  /* 3 */
+  *width: 13px;
+  /* 3 */ }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box; }
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Remove inner padding and border in Firefox 3+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * 1. Remove default vertical scrollbar in IE 6/7/8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */ }
+
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html,
+button,
+input,
+select,
+textarea {
+  color: #222; }
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+img {
+  vertical-align: middle; }
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+textarea {
+  resize: vertical; }
+
+.chromeframe {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0; }
+
+.alignnone {
+  margin: 5px 20px 20px 0; }
+
+.aligncenter,
+div.aligncenter {
+  display: block;
+  margin: 5px auto 5px auto; }
+
+.alignright {
+  float: right;
+  margin: 5px 0 20px 20px; }
+
+.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0; }
+
+a img.alignright {
+  float: right;
+  margin: 5px 0 20px 20px; }
+
+a img.alignnone {
+  margin: 5px 20px 20px 0; }
+
+a img.alignleft {
+  float: left;
+  margin: 5px 20px 20px 0; }
+
+a img.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.wp-caption {
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  max-width: 96%;
+  /* Image does not overflow the content area */
+  padding: 5px 3px 10px;
+  text-align: center; }
+
+.wp-caption.alignnone {
+  margin: 5px 20px 20px 0; }
+
+.wp-caption.alignleft {
+  margin: 5px 20px 20px 0; }
+
+.wp-caption.alignright {
+  margin: 5px 0 20px 20px; }
+
+.wp-caption img {
+  border: 0 none;
+  height: auto;
+  margin: 0;
+  max-width: 98.5%;
+  padding: 0;
+  width: auto; }
+
+.wp-caption p.wp-caption-text {
+  font-size: 11px;
+  line-height: 17px;
+  margin: 0;
+  padding: 0 4px 5px; }
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+  word-wrap: normal !important;
+  /* Many screen reader and browser combinations announce broken words as they would appear visually. */ }
+
+.screen-reader-text:focus {
+  background-color: #eee;
+  clip: auto !important;
+  clip-path: none;
+  color: #444;
+  display: block;
+  font-size: 1em;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000;
+  /* Above WP toolbar. */ }
+
+section .aboutus {
+  background-image: url(../images/back-about.png);
+  max-width: 1440px;
+  margin: 0 auto;
+  height: 408px; }
+  section .aboutus .aboutus_context {
+    max-width: 1131px;
+    position: relative;
+    height: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+    align-items: center;
+    grid-column-gap: 40px; }
+    section .aboutus .aboutus_context .aboutus_context_info {
+      max-width: 450px; }
+      section .aboutus .aboutus_context .aboutus_context_info h1 {
+        font-family: 'Playfair Display SC';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 61px;
+        line-height: 81px;
+        color: #89898B;
+        padding-bottom: 20px; }
+      section .aboutus .aboutus_context .aboutus_context_info p {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 18px;
+        letter-spacing: 0.01em;
+        color: #1D1C21; }
+    section .aboutus .aboutus_context .aboutus_context_img {
+      position: absolute;
+      right: 0; }
+
+section .artists {
+  background-color: #1D1C21;
+  max-width: 1440px;
+  margin: 0 auto;
+  height: 100%; }
+  section .artists .artists_context {
+    max-width: 1131px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 120px; }
+    section .artists .artists_context h1 {
+      padding-top: 80px;
+      padding-bottom: 24px;
+      color: #89898B;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 61px;
+      line-height: 81px;
+      font-family: 'Playfair Display SC'; }
+    section .artists .artists_context .artists_context_four-artists {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-gap: 25px; }
+      section .artists .artists_context .artists_context_four-artists .artist_context_four-artists_individual-artist .artist_context_four-artists_individual-artist_info {
+        display: grid;
+        grid-template-columns: 1fr 1fr; }
+        section .artists .artists_context .artists_context_four-artists .artist_context_four-artists_individual-artist .artist_context_four-artists_individual-artist_info span:first-of-type {
+          font-family: 'Playfair Display SC';
+          color: #F6F6F6;
+          font-style: normal;
+          font-weight: 900;
+          font-size: 24px;
+          line-height: 32px;
+          letter-spacing: 0.01em;
+          text-transform: uppercase; }
+        section .artists .artists_context .artists_context_four-artists .artist_context_four-artists_individual-artist .artist_context_four-artists_individual-artist_info span:nth-of-type(2) {
+          font-family: 'Raleway';
+          padding-top: 10px;
+          text-align: end;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 15px;
+          line-height: 18px;
+          letter-spacing: 0.01em;
+          color: #F6F6F6;
+          cursor: pointer; }
+
+section .our-accomplishments {
+  background-image: url(../images/awards.png);
+  max-width: 1440px;
+  margin: 0 auto;
+  height: 100%; }
+  section .our-accomplishments .our-accomplishments_context {
+    max-width: 1131px;
+    height: 100%;
+    margin: auto;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center; }
+    section .our-accomplishments .our-accomplishments_context .our-accomplishments_context_award {
+      display: grid;
+      grid-template-columns: 0.7fr 2fr; }
+      section .our-accomplishments .our-accomplishments_context .our-accomplishments_context_award .our-accomplishments_context_award_text {
+        color: #1D1C21;
+        max-width: 212px; }
+        section .our-accomplishments .our-accomplishments_context .our-accomplishments_context_award .our-accomplishments_context_award_text h3 {
+          font-style: normal;
+          font-weight: 900;
+          font-size: 24px;
+          line-height: 32px;
+          letter-spacing: 0.01em;
+          text-transform: uppercase;
+          font-family: 'Playfair Display SC';
+          padding-bottom: 10px; }
+        section .our-accomplishments .our-accomplishments_context .our-accomplishments_context_award .our-accomplishments_context_award_text span {
+          font-family: 'Raleway';
+          font-style: normal;
+          font-weight: normal;
+          font-size: 15px;
+          line-height: 18px;
+          letter-spacing: 0.01em;
+          margin-bottom: 10px; }
+          section .our-accomplishments .our-accomplishments_context .our-accomplishments_context_award .our-accomplishments_context_award_text span:nth-of-type(2) {
+            color: #FF0E0E;
+            cursor: pointer; }
+
+section .collective {
+  background-color: #1D1C21;
+  max-width: 1440px;
+  margin: 0 auto;
+  height: 100%; }
+  section .collective .collective_context {
+    max-width: 1131px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative; }
+    section .collective .collective_context .grid {
+      max-width: 1131px;
+      padding-left: 10%; }
+      section .collective .collective_context .grid .grid-item {
+        float: left;
+        width: 18%;
+        margin: auto; }
+        section .collective .collective_context .grid .grid-item img {
+          display: block;
+          width: 100%;
+          margin: auto; }
+      section .collective .collective_context .grid .grid-item--width2 {
+        width: 38%; }
+    section .collective .collective_context h1 {
+      text-align: center;
+      font-family: 'Playfair Display SC';
+      font-style: normal;
+      font-weight: 900;
+      font-size: 61px;
+      line-height: 81px;
+      color: #89898B;
+      padding-top: 75px; }
+    section .collective .collective_context span {
+      font-family: 'Raleway';
+      padding-top: 30px;
+      text-align: end;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 18px;
+      letter-spacing: 0.01em;
+      color: #F6F6F6;
+      cursor: pointer;
+      text-align: center;
+      display: block; }
+
+section .featured {
+  background-color: #1D1C21;
+  max-width: 1440px;
+  margin: 0 auto; }
+  section .featured .featured_context {
+    max-width: 1131px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    /* Modal Content */
+    /* The Close Button */
+    /* Next & previous buttons */
+    /* Position the "next button" to the right */
+    /* On hover, add a black background color with a little bit see-through */
+    /* Number text (1/3 etc) */ }
+    section .featured .featured_context .modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      padding-top: 100px;
+      left: 0;
+      top: 0;
+      width: 100vw;
+      height: 100vh;
+      overflow: auto;
+      background-color: black; }
+    section .featured .featured_context .modal-content {
+      position: relative;
+      margin: auto;
+      padding: 0;
+      width: 90%;
+      max-width: 1200px;
+      background-color: transparent; }
+    section .featured .featured_context .close {
+      color: white;
+      position: absolute;
+      top: 10px;
+      right: 25px;
+      font-size: 35px;
+      font-weight: bold; }
+    section .featured .featured_context .close:hover,
+    section .featured .featured_context .close:focus {
+      color: #999;
+      text-decoration: none;
+      cursor: pointer; }
+    section .featured .featured_context .mySlides {
+      display: none;
+      margin: auto; }
+    section .featured .featured_context .cursor {
+      cursor: pointer; }
+    section .featured .featured_context .prev,
+    section .featured .featured_context .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -50px;
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+      -webkit-user-select: none; }
+    section .featured .featured_context .next {
+      right: 0;
+      border-radius: 3px 0 0 3px; }
+    section .featured .featured_context .prev:hover,
+    section .featured .featured_context .next:hover {
+      background-color: rgba(0, 0, 0, 0.8); }
+    section .featured .featured_context .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0; }
+    section .featured .featured_context img {
+      margin-bottom: -4px; }
+    section .featured .featured_context .caption-container {
+      text-align: center;
+      background-color: black;
+      padding: 2px 16px;
+      color: white; }
+    section .featured .featured_context .demo {
+      opacity: 0.6; }
+    section .featured .featured_context .active,
+    section .featured .featured_context .demo:hover {
+      opacity: 1; }
+    section .featured .featured_context img.hover-shadow {
+      transition: 0.3s; }
+    section .featured .featured_context .hover-shadow:hover {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+    section .featured .featured_context .featured_context_top-content {
+      display: grid;
+      grid-template-columns: 5fr 1fr;
+      padding-top: 80px;
+      padding-bottom: 30px; }
+      section .featured .featured_context .featured_context_top-content h1 {
+        font-family: 'Playfair Display SC';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 61px;
+        line-height: 81px;
+        color: #89898B; }
+      section .featured .featured_context .featured_context_top-content span {
+        font-family: 'Raleway';
+        padding-top: 50px;
+        text-align: end;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 18px;
+        letter-spacing: 0.01em;
+        color: #F6F6F6;
+        cursor: pointer;
+        float: left; }
+  section .featured .featured_context_features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 25px;
+    padding-bottom: 160px; }
+    section .featured .featured_context_features .featured_context_features_small-tattoos {
+      font-family: 'Playfair Display SC';
+      font-style: normal;
+      font-weight: 900;
+      font-size: 24px;
+      line-height: 32px;
+      letter-spacing: 0.01em;
+      text-transform: uppercase;
+      padding-top: 24px;
+      color: #F6F6F6; }
+      section .featured .featured_context_features .featured_context_features_small-tattoos .featured_context_features_small-tattoos_imgs {
+        display: flex;
+        padding-top: 50px;
+        justify-content: space-between; }
+        section .featured .featured_context_features .featured_context_features_small-tattoos .featured_context_features_small-tattoos_imgs img br {
+          display: none; }
+    section .featured .featured_context_features .featured_context_features_big-tattoos {
+      display: flex;
+      justify-content: space-between; }
+
+footer {
+  background-color: #1D1C21;
+  max-width: 1440px;
+  margin: 0 auto;
+  height: 116px; }
+  footer .footer {
+    max-width: 1131px;
+    height: 58px;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px solid #89898B;
+    border-top: 1px solid #89898B; }
+    footer .footer .nav {
+      justify-content: space-between;
+      padding-top: 15px; }
+      footer .footer .nav li a {
+        color: #F6F6F6;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 18px;
+        letter-spacing: 0.01em;
+        color: #F6F6F6;
+        padding: 5px  0 10px 0; }
+        footer .footer .nav li a:hover {
+          color: #FF0E0E; }
+  footer .small {
+    padding-top: 15px;
+    height: 58px;
+    max-width: 1131px;
+    margin-left: auto;
+    margin-right: auto; }
+    footer .small br {
+      display: none; }
+    footer .small small {
+      font-family: Raleway;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 13px;
+      line-height: 15px;
+      letter-spacing: 0.01em;
+      color: #89898B; }
+      footer .small small:first-of-type {
+        padding-right: 100px; }
+    footer .small .social-media {
+      float: right; }
+      footer .small .social-media .facebook {
+        width: 15px;
+        height: 15px; }
+      footer .small .social-media .instagram {
+        padding-left: 30px;
+        width: 15px;
+        height: 15px; }
+
+section .form {
+  background-color: #1D1C21;
+  max-width: 1440px;
+  margin: 0 auto;
+  height: 100%;
+  padding-bottom: 80px; }
+  section .form .form_context {
+    max-width: 540px;
+    margin-left: auto;
+    margin-right: auto; }
+    section .form .form_context h3 {
+      font-family: 'Playfair Display SC';
+      font-style: normal;
+      font-weight: 900;
+      font-size: 24px;
+      line-height: 32px;
+      letter-spacing: 0.01em;
+      text-transform: uppercase;
+      color: #F6F6F6;
+      text-align: center;
+      padding-top: 80px;
+      padding-bottom: 20px; }
+    section .form .form_context label {
+      font-family: 'Raleway';
+      font-style: normal;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 18px;
+      letter-spacing: 0.01em;
+      color: #F6F6F6;
+      padding-bottom: 5px; }
+    section .form .form_context select, section .form .form_context input, section .form .form_context textarea {
+      display: block;
+      width: 100%;
+      background-color: transparent;
+      border: none;
+      color: #ffffff;
+      border-bottom: 1px solid #89898B; }
+    section .form .form_context select {
+      color: #36353D;
+      background: url(../images/dropdown.png) no-repeat right transparent;
+      -webkit-appearance: none;
+      background-position-x: 510px; }
+      section .form .form_context select option {
+        background-color: #1D1C21; }
+    section .form .form_context textarea {
+      height: 84px; }
+    section .form .form_context .form_context_upload {
+      display: flex;
+      justify-content: space-around;
+      padding-bottom: 40px; }
+      section .form .form_context .form_context_upload span {
+        padding-top: 33px;
+        float: left;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 18px;
+        letter-spacing: 0.01em;
+        color: #F6F6F6; }
+        section .form .form_context .form_context_upload span img {
+          padding-left: 5px; }
+    section .form .form_context ::placeholder {
+      padding-left: 20px;
+      color: #36353D; }
+    section .form .form_context .form_context_input {
+      background-color: transparent;
+      color: white;
+      padding: 0;
+      width: 180px;
+      height: 48px;
+      border: 2px solid #D8D8D9;
+      margin: auto;
+      display: block;
+      font-family: 'Raleway';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: 0.01em;
+      text-transform: uppercase;
+      margin-bottom: 80px; }
+  section .form .form_context_location {
+    color: #1D1C21;
+    max-width: 1131px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #c4c4c4;
+    display: grid;
+    grid-template-columns: 1fr 1.25fr; }
+    section .form .form_context_location h4 {
+      font-family: 'Playfair Display SC';
+      font-style: normal;
+      font-weight: 900;
+      font-size: 14px;
+      line-height: 19px;
+      text-transform: lowercase;
+      padding-top: 10px;
+      padding-bottom: 2px; }
+    section .form .form_context_location p {
+      font-family: 'Raleway';
+      font-style: normal;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 18px;
+      letter-spacing: 0.01em; }
+    section .form .form_context_location .form_context_adress {
+      width: 250px;
+      margin: 0 auto;
+      padding-top: 20px; }
+      section .form .form_context_location .form_context_adress .social-media {
+        padding-top: 15px; }
+        section .form .form_context_location .form_context_adress .social-media .facebook {
+          padding-right: 30px; }
+
+section .front-page {
+  background-image: url(../images/back-main.png);
+  max-width: 1440px;
+  margin: 0 auto;
+  height: 100%; }
+  section .front-page .front-page_context {
+    max-width: 1131px;
+    height: 100%;
+    position: relative;
+    margin-left: auto;
+    padding-bottom: 100px;
+    margin-right: auto; }
+    section .front-page .front-page_context .expertise-logo {
+      position: absolute;
+      top: 95px;
+      left: 0; }
+    section .front-page .front-page_context .social-media .facebook {
+      position: absolute;
+      top: 95px;
+      right: 0; }
+    section .front-page .front-page_context .social-media .instagram {
+      position: absolute;
+      top: 140px;
+      right: 0; }
+    section .front-page .front-page_context .front-page_img {
+      text-align: center;
+      padding-top: 125px; }
+    section .front-page .front-page_context h3 {
+      font-style: normal;
+      font-weight: 900;
+      color: #ffffff;
+      text-align: center;
+      font-size: 18px;
+      line-height: 24px;
+      letter-spacing: 0.01em;
+      font-family: 'Playfair Display SC';
+      padding-bottom: 58px; }
+    section .front-page .front-page_context .front-page_input {
+      background-color: transparent;
+      color: white;
+      padding: 0;
+      width: 180px;
+      height: 48px;
+      border: 2px solid #D8D8D9;
+      margin: auto;
+      display: block;
+      font-family: 'Raleway';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: 0.01em;
+      text-transform: uppercase; }
+
+body {
+  overflow-x: hidden; }
+
+header {
+  position: fixed;
+  display: inline-block;
+  max-width: 1131px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 36px;
+  border-bottom: 1px solid #89898B;
+  z-index: 100; }
+  header .navbar {
+    padding: 0 !important; }
+  header .navbar-collapse .navbar-nav {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr); }
+    header .navbar-collapse .navbar-nav .nav-link {
+      text-align: start;
+      color: #F6F6F6;
+      font-family: 'Raleway';
+      font-style: normal;
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 18px;
+      letter-spacing: 0.01em;
+      color: #F6F6F6; }
+      header .navbar-collapse .navbar-nav .nav-link:hover {
+        color: #FF0E0E; }
+
+.navbar-toggler-icon {
+  background-image: url(../images/burger-menu.png) !important;
+  width: 6rem; }
+
+.navbar-toggler {
+  background-color: white; }
+
+/*# sourceMappingURL=main.css.map */
