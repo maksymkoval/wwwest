@@ -624,27 +624,20 @@ section .collective {
   margin: 0 auto;
   height: 100%; }
   section .collective .collective_context {
-    max-width: 1131px;
+    max-width: 1175px;
     margin-left: auto;
     margin-right: auto;
     position: relative; }
-    section .collective .collective_context .grid {
-      max-width: 1131px;
-      padding-left: 7%; }
-      section .collective .collective_context .grid .grid-item {
-        float: left;
-        width: 16%;
-        margin: auto; }
-        section .collective .collective_context .grid .grid-item img {
-          display: block;
-          max-width: 100%;
-          margin: auto; }
-      section .collective .collective_context .grid .grid-item--width2 {
-        width: 32%; }
-      section .collective .collective_context .grid .grid-item--width2:first-of-type {
-        padding-bottom: 15px; }
-      section .collective .collective_context .grid .grid-second {
-        padding-top: 15px !important; }
+    section .collective .collective_context .grid:after {
+      content: '';
+      display: block;
+      clear: both; }
+    section .collective .collective_context .grid .grid-item {
+      position: relative;
+      float: left;
+      margin: 4px; }
+      section .collective .collective_context .grid .grid-item img {
+        width: 100%; }
     section .collective .collective_context h1 {
       text-align: center;
       font-family: 'Playfair Display SC';
@@ -1054,8 +1047,8 @@ header {
     padding: 0 !important; }
   header .navbar-collapse .navbar-nav {
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(10, 1fr); }
+    display: flex;
+    justify-content: space-between; }
     header .navbar-collapse .navbar-nav .nav-link {
       text-align: start;
       color: #F6F6F6;

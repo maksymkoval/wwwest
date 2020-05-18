@@ -20,8 +20,8 @@ header{
             .navbar-nav{
 
                 width: 100%;
-                display: grid;
-                grid-template-columns: repeat(10,1fr);
+                display: flex;
+               justify-content: space-between;
                 .nav-link{
                     text-align: start;
                     color: $color-text;

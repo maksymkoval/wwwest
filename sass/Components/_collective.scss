@@ -5,38 +5,24 @@ section{
         margin: 0 auto;
         height: 100%;
         .collective_context{
-            max-width: 1131px;
+            max-width: 1175px;
             margin-left: auto;
             margin-right: auto;
             position: relative;
+         
             .grid{
-                max-width: 1131px;
-              padding-left: 7%;
-            //   max-height: 900px;
-                .grid-item{
+                &:after {
+                    content: '';
+                    display: block;
+                    clear: both;
+                  }
+                  .grid-item {
+                    position: relative;
                     float: left;
-                    width: 16%;
-                    margin: auto;
-                    img{
-                            display: block;
-                            max-width: 100%;
-                            margin: auto;
-                    }
-                }
-                .grid-item--width2 { width: 32%;  }
-                .grid-item--width2:first-of-type{
-                    padding-bottom: 15px;
-                }
-                .grid-second{
-                    padding-top: 15px!important;
-                }
-                .last{
-                    
-                }
-                
-                // .grid-item--height2{ height: 100%; }
+                    margin: 4px  ;
+                    img{width: 100%;}
+                  }
             }
-            
             h1{
                 text-align: center;
                 font-family: 'Playfair Display SC';

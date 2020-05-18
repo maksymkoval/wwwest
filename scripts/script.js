@@ -3,13 +3,25 @@
   
   jQuery(document).ready(function(){
   // write code here
-  $('.grid').isotope({
-    itemSelector: '.grid-item',
-    masonry: {
-      columnWidth: 100,
-      horizontalOrder: true
-    }
-  });
+   var $grid = new Isotope('.grid', {
+        itemSelector: '.grid-item',
+  layoutMode: 'masonry',
+  masonry: {
+    columnWidth:10,
+    gutter: 1},
+  cellsByRow: {
+    columnWidth: 180,
+    rowHeight: 220
+  },
+  masonryHorizontal: {
+    rowHeight: 110
+  },
+  cellsByColumn: {
+    columnWidth: 180,
+    rowHeight: 220
+  }
+}  )
+
   });
   $(".front-page_input").click(function() {
     $('html,body').animate({
